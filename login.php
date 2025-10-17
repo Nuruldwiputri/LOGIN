@@ -19,7 +19,7 @@ if ($username == $username_valid && $password == $password_valid) {
         'login_at' => date('Y-m-d H:i:s')
     ];
 
-    echo "Selamat Datang: " . $username . ", Anda telah login sebanyak: " . $login_count . " kali";
+    echo "Selamat Datang: " . $username . ", Anda telah login sebanyak: " . count($_SESSION['login']) . " kali";
 
     echo '<br>';
     echo '<a href="logout.php">logout</a>';
