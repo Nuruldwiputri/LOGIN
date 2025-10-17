@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Halaman Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style type="text/css">
+    #container {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            
+            }
+            .tombol-login{
+
+            }
+            form {
+                border-radius: 10px;
+                background-color: black !important;
+                color: #bebdc5;
+            }
+            .warna-merah{
+                background-color:red;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form action="login.php" method="post" class="border border-danger border-3 p-5" style="background-color: blue;">
+        <div style="text-align: center;">
+            <img src="https://unnes.ac.id/wp-content/uploads/2022/11/logo-unnes-horizontal-white-yellow.png" style="width: 150px; justify-content: center;"/> 
+        </div>
+            <p style="text-align: center; font-size: 25px; margin-top: 20px;">LOGIN</p>
+            
+            <label class="form-label"> Username:</label>
+            <input name="username" class="form-control" type="text" > <!-- username -->
+            <label class="form-label"> Pasword:</label>
+            <input name="password" class="form-control" type="password" style="margin-bottom: 10px;"> <!-- password -->
+            <button type="submit" class="btn btn-success tombol-login warna-merah">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
